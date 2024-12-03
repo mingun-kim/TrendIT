@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.trend-keyword {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+.mention-count {
+  color: #888;
+  font-size: 0.9rem;
+}

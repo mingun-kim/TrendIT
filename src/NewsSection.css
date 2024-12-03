@@ -1,0 +1,28 @@
+.news-section {
+  flex: 2;
+  flex-wrap: wrap;
+}
+
+.news-section h2 {
+  margin-bottom: 20px;
+}
+
+.news-cards {
+  text-align: left;
+}
+
+.news-card {
+  color: black;
+  display: block;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  font-family: "Noto Sans KR";
+  text-decoration: none;
+}
+
+.newsTitle{
+  font-size: large;
+  font-weight: bold;
+}

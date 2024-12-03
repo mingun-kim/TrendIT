@@ -1,0 +1,15 @@
+.trend-description {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.generate-text-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: solid;
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  color: #d0d0d0;
+}
