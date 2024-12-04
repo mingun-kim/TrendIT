@@ -45,7 +45,7 @@ const App = () => {
   return (
     <div className="app">
       <KeywordHeader />
-      <TrendDescription />
+      <TrendDescription keyword={keyword} />
       <div id="widget">
         <GoogleTrends
             type="TIMESERIES"
