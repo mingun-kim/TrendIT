@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './Main'
 import Subject from './Subject'
 import Keyword from './Keyword'
+import React from 'react'
 
 function App() {
   return (
