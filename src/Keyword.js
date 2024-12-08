@@ -9,43 +9,11 @@ import { useSearchParams } from 'react-router-dom';
 
 const App = () => {
   const [keyword, setKeyword] = useSearchParams()
-  const [words, setWords] = useState([])
-  const [news, setNews] = useState([])
-  const [keyNews, setKeyNews] = useState([])
-  const goToSub = (sub) => {
-    fetch("http://146.56.161.252:3000/keywords", {
-      method: "GET"
-    })
-      .then((response) => response.json().then((data)=>{
-        setWords(data)
-        console.log(data)
-      }))
-    getNews()
-  }
-  
-  const getNews = () => {
-    fetch("http://146.56.161.252:3000/news", {
-      method: "GET"
-    })
-      .then((response) => response.json().then((data)=>{
-        setNews(data)
-        console.log(data)
-      }))
-  }
 
-  const getKeyNews = () => {
-    fetch("http://146.56.161.252:3000/news/keyword?keyword=" + "", {
-      method: "GET"
-    })
-      .then((response) => response.json().then((data)=>{
-        setKeyNews(data)
-        console.log(data)
-      }))
-  }
   return (
     <div className="app">
       <KeywordHeader />
-      <TrendDescription />
+      <TrendDescription keyword={keyword} />
       <div id="widget">
         <GoogleTrends
             type="TIMESERIES"

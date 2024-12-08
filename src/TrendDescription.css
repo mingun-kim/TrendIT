@@ -2,7 +2,10 @@
   background-color: #f5f5f5;
   padding: 20px;
   margin: 20px 0;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .generate-text-button {
@@ -12,4 +15,6 @@
   border-radius: 100px;
   background-color: #f5f5f5;
   color: #d0d0d0;
+  width: 30%;
+  align-self: center;
 }
